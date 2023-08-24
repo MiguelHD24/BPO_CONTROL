@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using EL;
 using DAL;
+using System.Data;
+
 namespace BL
 {
 	 public static class BL_Usuario
@@ -11,7 +13,16 @@ namespace BL
 		{
 			 return DAL_Usuario.Insert(Entidad);
 		}
-		 public static bool Update (Usuario Entidad)
+        public static Usuario MostrarUsuario()
+		{
+			return DAL_Usuario.MostrarUsuario();
+		}
+
+        public static DataTable MostrarU()
+		{
+			return DAL_Usuario.MostrarU();
+		}
+         public static bool Update (Usuario Entidad)
 		{
 			 return DAL_Usuario.Update(Entidad);
 		}

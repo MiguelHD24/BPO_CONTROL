@@ -1,5 +1,8 @@
 using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.Entity;
+using System.Data.SqlClient;
 using System.Linq;
 using EL;
 
@@ -11,7 +14,8 @@ namespace DAL
 		{
 			 using (BDBPOCONTROL bd = new BDBPOCONTROL ())
 			{
-				 bd.Usuario.Add(Entidad);
+				 Entidad.Estado = true;
+                 bd.Usuario.Add(Entidad);
 				 bd.SaveChanges();
 				 return Entidad;
 			}
@@ -25,7 +29,6 @@ namespace DAL
 				 Registro.Apellidos = Entidad.Apellidos;
 				 Registro.NumeroCedula = Entidad.NumeroCedula;
 				 Registro.Password = Entidad.Password;
-				 Registro.Estado = Entidad.Estado;
 				 Registro.ID_Rol = Entidad.ID_Rol;
 				 return bd.SaveChanges() > 0;
 			}
@@ -70,7 +73,39 @@ namespace DAL
                 }
             }
         }
-		
+
+        public static Usuario MostrarUsuario()
+        {
+            using (BDBPOCONTROL bd = new BDBPOCONTROL())
+            {
+              return bd.Usuario.Where(a => a.Estado == true).SingleOrDefault();
+            }
+        }
+
+        public static DataTable MostrarU()
+        {
+            DataTable DtResultado = new DataTable("Usuario");
+            SqlConnection SqlCon = new SqlConnection();
+            try
+            {
+                SqlCon.ConnectionString = ConexionSP.Cn;
+                SqlCommand SqlCmd = new SqlCommand();
+                SqlCmd.Connection = SqlCon;
+                SqlCmd.CommandText = "spmostrar_Usuario";
+                SqlCmd.CommandType = CommandType.StoredProcedure;
+
+                SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
+                SqlDat.Fill(DtResultado);
+
+            }
+            catch (Exception ex)
+            {
+                DtResultado = null;
+            }
+            return DtResultado;
+
+        }
+
 
         public static int ObtenerIDRol(int ID_Usuario)
         {

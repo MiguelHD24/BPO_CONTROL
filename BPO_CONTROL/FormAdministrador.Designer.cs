@@ -361,6 +361,7 @@
             this.PanelForm.Name = "PanelForm";
             this.PanelForm.Size = new System.Drawing.Size(1045, 582);
             this.PanelForm.TabIndex = 3;
+            this.PanelForm.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelForm_Paint);
             // 
             // FormAdministrador
             // 

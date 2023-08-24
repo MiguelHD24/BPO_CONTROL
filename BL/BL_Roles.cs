@@ -27,6 +27,11 @@ namespace BL
 		{
 			 return DAL_Roles.Registro(Entidad);
 		}
-		
-	}
+        public static List<Roles> ListarRoles()
+		{
+			return DAL_Roles.ListarRoles();
+		}
+
+
+    }
 }

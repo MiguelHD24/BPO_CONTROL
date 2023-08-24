@@ -33,6 +33,14 @@ namespace DAL
 				 return bd.SaveChanges() > 0;
 			}
 		}
+		//metodo para mostrar los roles en el combobox
+		public static List<Roles> ListarRoles()
+		{
+            using (BDBPOCONTROL bd = new BDBPOCONTROL())
+			{
+                return bd.Roles.ToList();
+            }
+        }
 		 public static bool Existe (Roles Entidad)
 		{
 			 using (BDBPOCONTROL bd = new BDBPOCONTROL ())
