@@ -80,5 +80,25 @@ namespace BPO_CONTROL
                 this.Hide();
             }
         }
+        private void MinimizarFormulario()
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+        private void btnMinimizar_Click(object sender, EventArgs e)
+        {
+            MinimizarFormulario();
+        }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnUsuario_Click(object sender, EventArgs e)
+        {
+            FormAgregar formAgregar = new FormAgregar();
+            formAgregar.Show();
+
+        }
     }
 }

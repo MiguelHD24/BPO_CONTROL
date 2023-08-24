@@ -49,9 +49,10 @@
             this.Label4.AutoSize = true;
             this.Label4.BackColor = System.Drawing.Color.Transparent;
             this.Label4.ForeColor = System.Drawing.Color.DimGray;
-            this.Label4.Location = new System.Drawing.Point(259, 57);
+            this.Label4.Location = new System.Drawing.Point(345, 70);
+            this.Label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label4.Name = "Label4";
-            this.Label4.Size = new System.Drawing.Size(199, 13);
+            this.Label4.Size = new System.Drawing.Size(231, 16);
             this.Label4.TabIndex = 51;
             this.Label4.Text = "________________________________";
             // 
@@ -61,9 +62,10 @@
             this.txtApellidos.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtApellidos.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtApellidos.ForeColor = System.Drawing.Color.Black;
-            this.txtApellidos.Location = new System.Drawing.Point(262, 34);
+            this.txtApellidos.Location = new System.Drawing.Point(349, 42);
+            this.txtApellidos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtApellidos.Name = "txtApellidos";
-            this.txtApellidos.Size = new System.Drawing.Size(196, 20);
+            this.txtApellidos.Size = new System.Drawing.Size(261, 25);
             this.txtApellidos.TabIndex = 50;
             this.txtApellidos.Text = "Apellidos";
             // 
@@ -72,9 +74,10 @@
             this.Label3.AutoSize = true;
             this.Label3.BackColor = System.Drawing.Color.Transparent;
             this.Label3.ForeColor = System.Drawing.Color.DimGray;
-            this.Label3.Location = new System.Drawing.Point(10, 57);
+            this.Label3.Location = new System.Drawing.Point(13, 70);
+            this.Label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label3.Name = "Label3";
-            this.Label3.Size = new System.Drawing.Size(223, 13);
+            this.Label3.Size = new System.Drawing.Size(259, 16);
             this.Label3.TabIndex = 49;
             this.Label3.Text = "____________________________________";
             // 
@@ -84,18 +87,20 @@
             this.txtNombres.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNombres.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombres.ForeColor = System.Drawing.Color.Black;
-            this.txtNombres.Location = new System.Drawing.Point(13, 34);
+            this.txtNombres.Location = new System.Drawing.Point(17, 42);
+            this.txtNombres.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtNombres.Name = "txtNombres";
-            this.txtNombres.Size = new System.Drawing.Size(220, 20);
+            this.txtNombres.Size = new System.Drawing.Size(293, 25);
             this.txtNombres.TabIndex = 48;
             this.txtNombres.Text = "Nombres";
             // 
             // PictureBox1
             // 
             this.PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox1.Image")));
-            this.PictureBox1.Location = new System.Drawing.Point(469, 12);
+            this.PictureBox1.Location = new System.Drawing.Point(625, 15);
+            this.PictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PictureBox1.Name = "PictureBox1";
-            this.PictureBox1.Size = new System.Drawing.Size(94, 77);
+            this.PictureBox1.Size = new System.Drawing.Size(125, 95);
             this.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PictureBox1.TabIndex = 47;
             this.PictureBox1.TabStop = false;
@@ -105,9 +110,10 @@
             this.Label2.AutoSize = true;
             this.Label2.BackColor = System.Drawing.Color.Transparent;
             this.Label2.ForeColor = System.Drawing.Color.DimGray;
-            this.Label2.Location = new System.Drawing.Point(10, 152);
+            this.Label2.Location = new System.Drawing.Point(13, 187);
+            this.Label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label2.Name = "Label2";
-            this.Label2.Size = new System.Drawing.Size(289, 13);
+            this.Label2.Size = new System.Drawing.Size(336, 16);
             this.Label2.TabIndex = 46;
             this.Label2.Text = "_______________________________________________";
             // 
@@ -116,26 +122,29 @@
             this.Label1.AutoSize = true;
             this.Label1.BackColor = System.Drawing.Color.Transparent;
             this.Label1.ForeColor = System.Drawing.Color.DimGray;
-            this.Label1.Location = new System.Drawing.Point(10, 103);
+            this.Label1.Location = new System.Drawing.Point(13, 127);
+            this.Label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label1.Name = "Label1";
-            this.Label1.Size = new System.Drawing.Size(289, 13);
+            this.Label1.Size = new System.Drawing.Size(336, 16);
             this.Label1.TabIndex = 45;
             this.Label1.Text = "_______________________________________________";
             // 
             // ComboBoxStatus
             // 
             this.ComboBoxStatus.FormattingEnabled = true;
-            this.ComboBoxStatus.Location = new System.Drawing.Point(318, 144);
+            this.ComboBoxStatus.Location = new System.Drawing.Point(424, 177);
+            this.ComboBoxStatus.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ComboBoxStatus.Name = "ComboBoxStatus";
-            this.ComboBoxStatus.Size = new System.Drawing.Size(248, 21);
+            this.ComboBoxStatus.Size = new System.Drawing.Size(329, 24);
             this.ComboBoxStatus.TabIndex = 44;
             // 
             // ComboBoxRol
             // 
             this.ComboBoxRol.FormattingEnabled = true;
-            this.ComboBoxRol.Location = new System.Drawing.Point(318, 95);
+            this.ComboBoxRol.Location = new System.Drawing.Point(424, 117);
+            this.ComboBoxRol.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ComboBoxRol.Name = "ComboBoxRol";
-            this.ComboBoxRol.Size = new System.Drawing.Size(248, 21);
+            this.ComboBoxRol.Size = new System.Drawing.Size(329, 24);
             this.ComboBoxRol.TabIndex = 43;
             // 
             // txtPassword
@@ -144,9 +153,10 @@
             this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPassword.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword.ForeColor = System.Drawing.Color.Black;
-            this.txtPassword.Location = new System.Drawing.Point(13, 129);
+            this.txtPassword.Location = new System.Drawing.Point(17, 159);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(286, 20);
+            this.txtPassword.Size = new System.Drawing.Size(381, 25);
             this.txtPassword.TabIndex = 42;
             this.txtPassword.Text = "Contraseña de Acceso";
             // 
@@ -156,9 +166,10 @@
             this.txtUsuarioA.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtUsuarioA.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsuarioA.ForeColor = System.Drawing.Color.Black;
-            this.txtUsuarioA.Location = new System.Drawing.Point(13, 80);
+            this.txtUsuarioA.Location = new System.Drawing.Point(17, 98);
+            this.txtUsuarioA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtUsuarioA.Name = "txtUsuarioA";
-            this.txtUsuarioA.Size = new System.Drawing.Size(286, 20);
+            this.txtUsuarioA.Size = new System.Drawing.Size(381, 25);
             this.txtUsuarioA.TabIndex = 41;
             this.txtUsuarioA.Text = "Usuario de Acceso (cedula)";
             // 
@@ -172,18 +183,19 @@
             this.btnGuardar.ForeColor = System.Drawing.Color.Black;
             this.btnGuardar.Image = ((System.Drawing.Image)(resources.GetObject("btnGuardar.Image")));
             this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGuardar.Location = new System.Drawing.Point(154, 186);
+            this.btnGuardar.Location = new System.Drawing.Point(205, 229);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(234, 38);
+            this.btnGuardar.Size = new System.Drawing.Size(312, 47);
             this.btnGuardar.TabIndex = 40;
             this.btnGuardar.Text = "Guardar Nuevo Usuario";
             this.btnGuardar.UseVisualStyleBackColor = true;
             // 
             // FormAgregar
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(577, 236);
+            this.ClientSize = new System.Drawing.Size(769, 290);
             this.Controls.Add(this.Label4);
             this.Controls.Add(this.txtApellidos);
             this.Controls.Add(this.Label3);
@@ -196,8 +208,10 @@
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtUsuarioA);
             this.Controls.Add(this.btnGuardar);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormAgregar";
             this.Text = "FormAgregar";
+            this.Load += new System.EventHandler(this.FormAgregar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

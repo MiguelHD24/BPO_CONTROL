@@ -15,6 +15,12 @@ namespace BPO_CONTROL
         public FormAgregar()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
+        }
+
+        private void FormAgregar_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
